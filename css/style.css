@@ -1,0 +1,117 @@
+
+@font-face {
+font-family: helvetica;
+src: url(../fuentes/Helvetica.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 150px;
+}
+
+ul li {
+    font-family: Helvetica;
+}
+
+.sucaro {
+    width: 922px;
+    height: 400px;
+    background-color: blue;
+}
+
+#carrusel {
+    width: 922px;
+    height: 400px;
+
+}
+
+.cafebox  {
+    width: 472px;
+    height: 314px;
+    margin-top: 30px;
+    
+}
+
+#accofe  {
+    width: 472px;
+    height: 314px;
+    }
+
+
+.acebox {
+
+    width: 472px;
+    height: 314px;
+    background-color: cyan;
+}    
+
+.new  {
+        padding: 100px;
+       
+}
+
+.espe {
+    width: 472px;
+    height: 314px;
+    background-color: yellow;
+    margin-top: 30px
+    
+}
+
+.mew {
+    padding: 100px;
+}
+
+.chanbox {
+      width: 472px;
+      height: 314px;
+}
+
+#chanfe {
+    width: 472px;
+    height: 314px;
+}
+
+
+.subebi {
+
+    width: 922px;
+    height: 400px;
+    background-color: coral;
+    margin-top: 30px;
+}
+
+.fabcof {
+   padding-top: 5%;
+   padding-left: 10%;
+
+}
+
+.delicafe {
+    padding-left: 450px;
+    padding-bottom: 200px;
+    
+}
+
+h4 {
+    font-size: 120%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+ul li img {
+    width: 30px;
+    height: auto;
+}
+
+
+h5 {
+    font-size: 120%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
