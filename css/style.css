@@ -9,109 +9,98 @@ src: url(../fuentes/Helvetica.ttf);
     padding: 0;
 }
 
-img {
-    width: 150px;
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
 }
 
-ul li {
+header img {
+    height: 64px;
+}
+
+nav ul {
+    display: flex;
     font-family: Helvetica;
-}
-
-.sucaro {
-    width: 922px;
-    height: 400px;
-    background-color: blue;
-}
-
-#carrusel {
-    width: 922px;
-    height: 400px;
+    list-style: none;
+    gap: 20px;
 
 }
 
-.cafebox  {
-    width: 472px;
-    height: 314px;
-    margin-top: 30px;
-    
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Helvetica;
+    flex-direction: column; 
 }
 
-#accofe  {
-    width: 472px;
-    height: 314px;
-    }
-
-
-.acebox {
-
-    width: 472px;
-    height: 314px;
-    background-color: cyan;
-}    
-
-.new  {
-        padding: 100px;
-       
+.carru img {
+    display: flex;
+    width: 901px;
+    margin: 3% 0 3% 0;
 }
 
-.espe {
-    width: 472px;
-    height: 314px;
+.super {
+    display: flex;
+    justify-content: center;
+}
+ 
+.super img {
+    height: 200px;
+}
+
+.mejores {
+    width: 30%;
+    background-color: aqua;
+}
+
+.grano {
+    height: 20px;
+}
+
+.chan {
+    width: 30%;
     background-color: yellow;
-    margin-top: 30px
-    
 }
 
-.mew {
-    padding: 100px;
+.encu {
+    display: flex;
+    flex-direction: row;
+    background-color:chocolate;
 }
 
-.chanbox {
-      width: 472px;
-      height: 314px;
-}
-
-#chanfe {
-    width: 472px;
-    height: 314px;
-}
-
-
-.subebi {
-
-    width: 922px;
+.frapu img {
     height: 400px;
-    background-color: coral;
-    margin-top: 30px;
 }
 
-.fabcof {
-   padding-top: 5%;
-   padding-left: 10%;
+.deli {
+    width: 30%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-.delicafe {
-    padding-left: 450px;
-    padding-bottom: 200px;
+.sigue {
+    display: flex;
+    font-size: 120%;
+    margin: 2%;
+}
+
+.sox img {
+    
+    height: 50px;
     
 }
 
-h4 {
+.dere {
+    display: flex;
     font-size: 120%;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
 
-}
-
-ul li img {
-    width: 30px;
-    height: auto;
-}
-
-
-h5 {
-    font-size: 120%;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
