@@ -7,17 +7,21 @@ src: url(../fuentes/Helvetica.ttf);
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100px;
     align-items: center;
+    
+
 }
 
 header img {
     height: 64px;
+    margin-left: 4%;
 }
 
 nav ul {
@@ -25,59 +29,109 @@ nav ul {
     font-family: Helvetica;
     list-style: none;
     gap: 20px;
+    margin-right: 5%;
 
 }
 
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-family: Helvetica;
-    flex-direction: column; 
+    flex-direction: column;
+    overflow-x: hidden; 
+    
+   
 }
 
 .carru img {
     display: flex;
-    width: 901px;
-    margin: 3% 0 3% 0;
+    width: 100%;
+    margin: 0% 0 3% 0;
 }
 
 .super {
     display: flex;
     justify-content: center;
+    width: 120%;
+    height: 306px;
+    
 }
  
 .super img {
-    height: 200px;
+    display: flex;    
+    height: 202px;
+    width: 313px;
 }
 
 .mejores {
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: aqua;
 }
 
-.grano {
-    height: 20px;
+.mejores h1 {
+    font-size: 150%;
+    text-align: center;
+    margin: 10%;
+}
+
+.mejores p {
+    text-align: center;
 }
 
 .chan {
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: yellow;
+}
+
+.chan h2 {
+    font-size: 150%;
+    text-align: center;
+    margin: 10%;
+}
+
+.chan p {
+    text-align: center;
 }
 
 .encu {
     display: flex;
-    flex-direction: row;
-    background-color:chocolate;
+    background-color: chocolate;
+    justify-content: center;    
+    width: 100%;
+    height: 550px;
 }
 
-.frapu img {
-    height: 400px;
+.frapu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 10%;
+    height: 80%
+    
 }
 
 .deli {
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 18%;
+        
 }
+
+.deli h3 {
+    font-size: 140%;
+    text-align: center;
+    
+}
+ .deli p {
+    text-align: center;
+ }
+
 
 footer {
     display: flex;
