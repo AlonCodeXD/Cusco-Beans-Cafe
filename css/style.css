@@ -51,87 +51,11 @@ main {
     margin: 0% 0 3% 0;
 }
 
-.super {
-    display: flex;
-    justify-content: center;
-    width: 120%;
-    height: 306px;
-    
-}
  
-.super img {
-    display: flex;    
-    height: 202px;
-    width: 313px;
-}
 
-.mejores {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: aqua;
-}
 
-.mejores h1 {
-    font-size: 150%;
-    text-align: center;
-    margin: 10%;
-}
 
-.mejores p {
-    text-align: center;
-}
 
-.chan {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: yellow;
-}
-
-.chan h2 {
-    font-size: 150%;
-    text-align: center;
-    margin: 10%;
-}
-
-.chan p {
-    text-align: center;
-}
-
-.encu {
-    display: flex;
-    background-color: chocolate;
-    justify-content: center;
-    
-    width: 80%;
-    height: 550px;
-}
-
-.frapu {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-left: 5%;
-    height: 80%
-    
-}
-
-.deli {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 12%;
-        
-}
-
-.deli h3 {
-    font-size: 140%;
-    text-align: center;
-}
- .deli p {
-    text-align: center;
- }
 
 
 footer {
