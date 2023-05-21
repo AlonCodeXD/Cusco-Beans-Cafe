@@ -24,14 +24,27 @@ header img {
     margin-left: 4%;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img {
+    display: none;
+    height: 64px;
+    margin-right: 7%;
+}
+
 nav ul {
     display: flex;
     font-family: Helvetica;
     list-style: none;
     gap: 20px;
     margin-right: 5%;
-
 }
+
+
 
 main {
     font-family: Helvetica;
@@ -106,7 +119,22 @@ main {
     font-size: medium;
 }
 
+@media screen and (max-width: 425px) {
+    nav ul { 
+      flex-direction: column;
+      display: none;
+    }
+    
+    nav img {
+        display: block;
+    }
 
+    .grilla {
+       display: flex;
+       flex-direction: column;        
+    }   
+
+}
 
 
 
