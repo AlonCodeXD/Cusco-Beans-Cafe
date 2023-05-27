@@ -7,24 +7,18 @@ src: url(../fuentes/Helvetica.ttf);
 * {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
 .navbar-brand img {
     height: 64px;
 }
 
-
-
-
 main {
     font-family: Helvetica;
-    overflow-x: hidden; 
-    overflow-y: hidden;   
+    overflow: hidden;  
    
 }
-
-
 
 .grilla {
     display: grid;
@@ -85,7 +79,122 @@ main {
     font-size: medium;
 }
 
-@media screen and (max-width: 425px) {
+.lasbebidas {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+
+.fledrink {
+    display: flex;
+    flex-direction: column;
+}
+
+.lateral {
+    border: 2px solid black;
+    border-radius: 15px;
+    align-items: center;
+        
+}
+
+.frdrink{
+    margin: 5px;
+}
+
+.drink {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.drink img {
+    width: 64px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.text {
+    margin-right: 5px;
+}
+
+.drink img .text {
+    flex-grow: 1;
+}
+
+.taza {
+    display: flex;
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+    '  .    .    head  head head head head  .      .      . '
+    '  .   pro1  pro1    .  pro2 pro2   .  pro3   pro3    . '
+    '  .   pro1  pro1    .  pro2 pro2   .  pro3   pro3    . ' 
+    '  .     .     .     .    .    .    .    .      .     . '
+    '  .   pro4  pro4    .  pro5 pro5   .  pro6   pro6    . '
+    '  .   pro4  pro4    .  pro5 pro5   .  pro6   pro6    . ';
+    
+
+    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+    
+}
+
+.head{
+    grid-area: head;
+    font-size: xxx-large;
+}
+
+.pro1 {
+    grid-area: pro1;
+}
+
+.pro2 {
+    grid-area: pro2;
+}
+
+.pro3 {
+    grid-area: pro3;
+} 
+
+.pro4 {
+    grid-area: pro4;
+}
+
+.pro5 {
+    grid-area: pro5;
+}
+
+.pro6 {
+    grid-area: pro6;
+}
+
+.taza img {
+    width: 150px;
+}
+
+
+
+.suit {
+    font-size: larger;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:526px) {
     nav ul { 
       flex-direction: column;
       display: none;
@@ -95,10 +204,48 @@ main {
         display: block;
     }
 
-    .grilla {
-       display: flex;
-       flex-direction: column;        
-    }   
+    .lasbebidas {
+        flex-direction: column;
+    }
+    
+    .taza {
+        grid-template-areas: 
+        'head head head head'
+        'pro1 pro1 pro2 pro2'
+        'pro1 pro1 pro2 pro2'
+        '  .    .    .    . '
+        'pro3 pro3 pro4 pro4'
+        'pro3 pro3 pro4 pro4'
+        '  .    .    .    . '
+        'pro5 pro5 pro6 pro6'
+        'pro5 pro5 pro6 pro6';
+        grid-template-rows: repeat(8, 90px);
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-right: 6%;
+    }
+
+   .taza img {
+      width: 150px;   
+   }
+
+   .head {
+    font-size: xx-large;
+   }
+
+    .lateral {
+        justify-content: center;
+        align-items: center;
+        column-count: 2;
+               
+    }
+
+    .drink {
+        margin: 6%;
+    }
+
+
 
 }
 
