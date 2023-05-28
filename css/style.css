@@ -275,7 +275,7 @@ margin: 40px 15px 10px 15px;
         '  .    .    .    . '
         'pro5 pro5 pro6 pro6'
         'pro5 pro5 pro6 pro6';
-        grid-template-rows: repeat(8, 90px);
+        grid-template-rows: repeat(9, 90px);
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
         align-items: center;
@@ -301,7 +301,23 @@ margin: 40px 15px 10px 15px;
         margin: 6%;
     }
 
+    .grigrano {
+        grid-template-areas: 
+        ' . gra1 gra1 . gra2 gra2 .'
+        ' . gra1 gra1 . gra2 gra2 .'
+        ' .   .    .  .   .    .  .'
+        ' . gra3 gra3 .   .    .  .'
+        ' . gra3 gra3 .   .    .  .';
 
+        grid-template-rows: repeat(5, 80px);
+        grid-template-columns: repeat(7, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grigrano img {
+        width: 150px;
+    }
 
 }
 
