@@ -85,8 +85,19 @@ main {
     padding: 30px;
 }
 
+.lospostres {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
 
 .fledrink {
+    display: flex;
+    flex-direction: column;
+}
+
+.flatpos {
     display: flex;
     flex-direction: column;
 }
@@ -95,7 +106,12 @@ main {
     border: 2px solid black;
     border-radius: 15px;
     align-items: center;
-        
+}
+
+.costado {
+    border: 2px solid black;
+    border-radius: 15px;
+    align-items: center;
 }
 
 .frdrink{
@@ -109,13 +125,30 @@ main {
     margin-top: 30px;
 }
 
+.hotpos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
 .drink img {
     width: 64px;
     margin-right: 10px;
     margin-left: 10px;
 }
 
+.hotpos img {
+    width: 64px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 .text {
+    margin-right: 5px;
+}
+
+.texpos {
     margin-right: 5px;
 }
 
@@ -144,8 +177,35 @@ main {
     
 }
 
-.head{
+.pan {
+    display: flex;
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+    '  .    .    beza beza beza beza beza  .      .      . '
+    '  .   wit1  wit1    .  wit2 wit2   .  wit3   wit3    . '
+    '  .   wit1  wit1    .  wit2 wit2   .  wit3   wit3    . ' 
+    '  .     .     .     .    .    .    .    .      .     . '
+    '  .   wit4  wit4    .  wit5 wit5   .  wit6   wit6    . '
+    '  .   wit4  wit4    .  wit5 wit5   .  wit6   wit6    . ';
+    
+
+    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+
+}
+
+
+.head {
     grid-area: head;
+    font-size: xxx-large;
+}
+
+.beza {
+    grid-area: beza;
     font-size: xxx-large;
 }
 
@@ -173,9 +233,44 @@ main {
     grid-area: pro6;
 }
 
+
+.wit1 {
+    grid-area: wit1;
+}
+
+.wit2 {
+    grid-area: wit2;
+}
+
+.wit3 {
+    grid-area: wit3;
+}
+
+.wit4 {
+    grid-area: wit4;
+}
+
+.wit5 {
+    grid-area: wit5;
+}
+
+.wit6 {
+    grid-area: wit6;
+}
+
+
+
 .taza img {
     width: 150px;
 }
+
+
+.pan img {
+    width: 150px;
+}
+
+
+
 
 .suit {
     font-size: larger;
@@ -184,8 +279,14 @@ main {
 }
 
 
-
 .losgranos {
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 50px 0 50px;
+}
+
+.gear {
     border: 5px solid black;
     border-radius: 15px;
     padding: 30px;
@@ -200,6 +301,14 @@ main {
     
 }
 
+.xdgear {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 .grigrano { 
    
    display: grid;
@@ -213,6 +322,22 @@ grid-template-columns: repeat(10, 1fr);
 justify-content: center;
 align-items: center;
 margin: 40px 15px 10px 15px;
+
+}
+
+.grigear {
+
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+    '  .  ger1  ger1  .  ger2 ger2  .  ger3 ger3  . '
+    '  .  ger1  ger1  .  ger2 ger2  .  ger3 ger3  . '  ;
+ 
+ grid-template-rows: repeat(2, 100px);
+ grid-template-columns: repeat(10, 1fr);
+ justify-content: center;
+ align-items: center;
+ margin: 40px 15px 10px 15px;
 
 }
 
@@ -234,7 +359,29 @@ margin: 40px 15px 10px 15px;
     grid-area: gra3;
 }
 
+.ger1 {
+    display: flex;
+    flex-direction: column;
+    grid-area: ger1; 
+}
+
+.ger2 {
+    display: flex;
+    flex-direction: column;
+    grid-area: ger2;
+}
+
+.ger3 {
+    display: flex;
+    flex-direction: column;
+    grid-area: ger3;
+}
+
 .grigrano img {
+    width: 180px;
+}
+
+.grigear img {
     width: 180px;
 }
 
@@ -263,6 +410,10 @@ margin: 40px 15px 10px 15px;
     .lasbebidas {
         flex-direction: column;
     }
+
+    .lospostres {
+        flex-direction: column;
+    }
     
     .taza {
         grid-template-areas: 
@@ -282,11 +433,37 @@ margin: 40px 15px 10px 15px;
         margin-right: 6%;
     }
 
+    .pan {
+        grid-template-areas: 
+        'beza beza beza beza'
+        'wit1 wit1 wit2 wit2'
+        'wit1 wit1 wit2 wit2'
+        '  .    .    .    . '
+        'wit3 wit3 wit4 wit4'
+        'wit3 wit3 wit4 wit4'
+        '  .    .    .    . '
+        'wit5 wit5 wit6 wit6'
+        'wit5 wit5 wit6 wit6';
+        grid-template-rows: repeat(9, 90px);
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-right: 6%;
+    }
+
    .taza img {
       width: 150px;   
    }
 
+   .pan img {
+    width: 150px;
+   }
+
    .head {
+    font-size: xx-large;
+   }
+
+   .beza {
     font-size: xx-large;
    }
 
@@ -294,7 +471,14 @@ margin: 40px 15px 10px 15px;
         justify-content: center;
         align-items: center;
         column-count: 2;
-               
+             
+    }
+
+    .costado {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: baseline;
+        column-count: 3;
     }
 
     .drink {
@@ -315,8 +499,31 @@ margin: 40px 15px 10px 15px;
         align-items: center;
     }
 
+    .grigear {
+        grid-template-areas: 
+        ' . ger1 ger1 . ger2 ger2 .'
+        ' . ger1 ger1 . ger2 ger2 .'
+        ' .   .    .  .   .    .  .'
+        ' . ger3 ger3 .   .    .  .'
+        ' . ger3 ger3 .   .    .  .';
+
+        grid-template-rows: repeat(5, 80px);
+        grid-template-columns: repeat(7, 1fr);
+        justify-content: center;
+        align-items: center;
+
+    }
+
     .grigrano img {
         width: 150px;
+    }
+
+    .grigear img {
+        width: 150px;
+    }
+
+    .texgra {
+        text-align: justify;
     }
 
 }
