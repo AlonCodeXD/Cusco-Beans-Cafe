@@ -1,0 +1,102 @@
+
+
+@media (max-width:526px) {
+
+.nav{
+	flex-direction: column;
+	display: none;
+}
+
+nav img {
+	display: block;
+}
+
+.lasbebidas {
+	flex-direction: column;
+}
+.lospostres {
+	flex-direction: column;
+}
+.taza {
+	grid-template-areas: 
+        'head head head head'
+        'pro1 pro1 pro2 pro2'
+        'pro1 pro1 pro2 pro2'
+        '  .    .    .    . '
+        'pro3 pro3 pro4 pro4'
+        'pro3 pro3 pro4 pro4'
+        '  .    .    .    . '
+        'pro5 pro5 pro6 pro6'
+        'pro5 pro5 pro6 pro6';
+	grid-template-rows: repeat(9, 90px);
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
+	margin-right: 6%;
+}
+.pan {
+	grid-template-areas: 
+        'beza beza beza beza'
+        'wit1 wit1 wit2 wit2'
+        'wit1 wit1 wit2 wit2'
+        '  .    .    .    . '
+        'wit3 wit3 wit4 wit4'
+        'wit3 wit3 wit4 wit4'
+        '  .    .    .    . '
+        'wit5 wit5 wit6 wit6'
+        'wit5 wit5 wit6 wit6';
+	grid-template-rows: repeat(9, 90px);
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
+	margin-right: 6%;
+}
+.head {
+	font-size: xx-large;
+}
+.beza {
+	font-size: xx-large;
+}
+.lateral {
+	justify-content: center;
+	align-items: center;
+	column-count: 2;
+}
+.costado {
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	column-count: 3;
+}
+.drink {
+	margin: 6%;
+}
+.grigrano {
+	grid-template-areas: 
+        ' . gra1 gra1 . gra2 gra2 .'
+        ' . gra1 gra1 . gra2 gra2 .'
+        ' .   .    .  .   .    .  .'
+        ' . gra3 gra3 .   .    .  .'
+        ' . gra3 gra3 .   .    .  .';
+	grid-template-rows: repeat(5, 80px);
+	grid-template-columns: repeat(7, 1fr);
+	justify-content: center;
+	align-items: center;
+}
+.grigear {
+	grid-template-areas: 
+        ' . ger1 ger1 . ger2 ger2 .'
+        ' . ger1 ger1 . ger2 ger2 .'
+        ' .   .    .  .   .    .  .'
+        ' . ger3 ger3 .   .    .  .'
+        ' . ger3 ger3 .   .    .  .';
+	grid-template-rows: repeat(5, 80px);
+	grid-template-columns: repeat(7, 1fr);
+	justify-content: center;
+	align-items: center;
+}
+.texgra {
+	text-align: justify;
+}
+
+}
