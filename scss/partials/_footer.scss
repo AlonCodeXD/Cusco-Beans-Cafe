@@ -1,0 +1,28 @@
+
+
+
+
+.soicon {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(80, 79, 79);
+    padding: 30px;
+}
+
+.soicon img {
+    width: 40px;
+}
+
+
+.teboton {
+    display: flex;
+    justify-content: center;
+    background-color: grayscale($color: #bbb7b7);
+    padding: 7px
+}
+
+h4 {
+    font-size: 15px;
+}
+
+
