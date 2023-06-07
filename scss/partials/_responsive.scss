@@ -2,6 +2,11 @@
 
 @media (max-width:526px) {
 
+
+* {
+	position: relative;
+}
+
 .nav{
 	flex-direction: column;
 	display: none;
@@ -119,6 +124,11 @@ h3 {
 }
 .texgra {
 	text-align: justify;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
 }
 
 }
