@@ -1,0 +1,82 @@
+
+.lospostres {
+	display: flex;
+	flex-direction: row;
+	padding: 30px;
+}
+
+.flatpos {
+	display: flex;
+	flex-direction: column;
+}
+
+.costado {
+	border: 2px solid black;
+	border-radius: 15px;
+	align-items: center;
+}
+
+
+.hotpos {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	img {
+		width: 64px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+}
+
+.texpos {
+	margin-right: 5px;
+}
+
+.pan {
+	display: flex;
+	display: grid;
+	place-items: center;
+	grid-template-areas: 
+    '  .    .    beza  beza beza beza beza  .      .      . '
+    '  .   wit1  wit1    .  wit2 wit2   .  wit3   wit3    . '
+    '  .   wit1  wit1    .  wit2 wit2   .  wit3   wit3    . ' 
+    '  .     .     .     .    .    .    .    .      .     . '
+    '  .   wit4  wit4    .  wit5 wit5   .  wit6   wit6    . '
+    '  .   wit4  wit4    .  wit5 wit5   .  wit6   wit6    . ';
+	grid-template-rows: repeat(6, 100px);
+	grid-template-columns: repeat(10, 1fr);
+	justify-content: center;
+	align-items: center;
+	margin-left: 8%;
+	img {
+		width: 150px;
+	}
+	img {
+		width: 150px;
+	}
+}
+
+.beza {
+	grid-area: beza;
+	font-size: xxx-large;
+}
+
+.wit1 {
+	grid-area: wit1;
+}
+.wit2 {
+	grid-area: wit2;
+}
+.wit3 {
+	grid-area: wit3;
+}
+.wit4 {
+	grid-area: wit4;
+}
+.wit5 {
+	grid-area: wit5;
+}
+.wit6 {
+	grid-area: wit6;
+}

@@ -1,0 +1,57 @@
+
+
+.losgranos {
+	border: 5px solid black;
+	border-radius: 15px;
+	padding: 30px;
+	margin: 20px 50px 0 50px;
+}
+
+.granfe {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.grigrano {
+	display: grid;
+	place-items: center;
+	grid-template-areas: 
+   '  .  gra1  gra1  .  gra2 gra2  .  gra3 gra3  . '
+   '  .  gra1  gra1  .  gra2 gra2  .  gra3 gra3  . '  ;
+	grid-template-rows: repeat(2, 100px);
+	grid-template-columns: repeat(10, 1fr);
+	justify-content: center;
+	align-items: center;
+	margin: 40px 15px 10px 15px;
+	img {
+		width: 180px;
+	}
+	img {
+		width: 150px;
+	}
+}
+
+.gra1 {
+	display: flex;
+	flex-direction: column;
+	grid-area: gra1;
+}
+.gra2 {
+	display: flex;
+	flex-direction: column;
+	grid-area: gra2;
+}
+.gra3 {
+	display: flex;
+	flex-direction: column;
+	grid-area: gra3;
+}
+
+.texgra {
+	margin-top: 5%;
+	text-align: center;
+	font-size: medium;
+} 

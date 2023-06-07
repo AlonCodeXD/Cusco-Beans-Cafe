@@ -1,0 +1,50 @@
+
+
+.gear {
+	border: 5px solid black;
+	border-radius: 15px;
+	padding: 30px;
+	margin: 20px 50px 0 50px;
+}
+
+.xdgear {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.grigear {
+	display: grid;
+	place-items: center;
+	grid-template-areas: 
+    '  .  ger1  ger1  .  ger2 ger2  .  ger3 ger3  . '
+    '  .  ger1  ger1  .  ger2 ger2  .  ger3 ger3  . '  ;
+	grid-template-rows: repeat(2, 100px);
+	grid-template-columns: repeat(10, 1fr);
+	justify-content: center;
+	align-items: center;
+	margin: 40px 15px 10px 15px;
+	img {
+		width: 180px;
+	}
+	img {
+		width: 150px;
+	}
+}
+
+.ger1 {
+	display: flex;
+	flex-direction: column;
+	grid-area: ger1;
+}
+.ger2 {
+	display: flex;
+	flex-direction: column;
+	grid-area: ger2;
+}
+.ger3 {
+	display: flex;
+	flex-direction: column;
+	grid-area: ger3;
+}

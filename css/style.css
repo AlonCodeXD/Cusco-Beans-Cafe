@@ -10,14 +10,42 @@
   height: 64px;
 }
 
+body {
+  background-image: url(../imagenes/index/1332.jpg);
+  background-size: 100%;
+  background-blend-mode: multiply;
+  background-position: center center;
+}
+
 main {
   position: relative;
+}
+
+.sigue {
+  display: flex;
+  align-items: start;
+  font-size: 120%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.sox img {
+  height: 50px;
+}
+
+.dere {
+  display: flex;
+  font-size: 120%;
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 
 .grilla {
   display: grid;
   grid-template-rows: repeat(3, 250px);
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .kof img {
@@ -52,8 +80,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-column: 1;
-  grid-row: 2;
+  grid-column: 1/3;
+  grid-row: 2/4;
   background-color: orange;
 }
 .sof img {
@@ -66,19 +94,26 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-column: 3;
-  grid-row: 2;
+  grid-column: 3/5;
+  grid-row: 2/5;
   background-color: orange;
   font-size: medium;
 }
 
-.lasbebidas {
-  display: flex;
-  flex-direction: row;
-  padding: 30px;
+h1 {
+  text-align: center;
+  font-size: 32px;
 }
 
-.lospostres {
+h2 {
+  text-align: center;
+}
+
+.btn-lg {
+  background-color: #198754;
+}
+
+.lasbebidas {
   display: flex;
   flex-direction: row;
   padding: 30px;
@@ -89,18 +124,7 @@ main {
   flex-direction: column;
 }
 
-.flatpos {
-  display: flex;
-  flex-direction: column;
-}
-
 .lateral {
-  border: 2px solid black;
-  border-radius: 15px;
-  align-items: center;
-}
-
-.costado {
   border: 2px solid black;
   border-radius: 15px;
   align-items: center;
@@ -125,23 +149,7 @@ main {
   flex-grow: 1;
 }
 
-.hotpos {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-.hotpos img {
-  width: 64px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
 .text {
-  margin-right: 5px;
-}
-
-.texpos {
   margin-right: 5px;
 }
 
@@ -163,31 +171,8 @@ main {
   width: 150px;
 }
 
-.pan {
-  display: flex;
-  display: grid;
-  place-items: center;
-  grid-template-areas: "  .    .    beza  beza beza beza beza  .      .      . " "  .   wit1  wit1    .  wit2 wit2   .  wit3   wit3    . " "  .   wit1  wit1    .  wit2 wit2   .  wit3   wit3    . " "  .     .     .     .    .    .    .    .      .     . " "  .   wit4  wit4    .  wit5 wit5   .  wit6   wit6    . " "  .   wit4  wit4    .  wit5 wit5   .  wit6   wit6    . ";
-  grid-template-rows: repeat(6, 100px);
-  grid-template-columns: repeat(10, 1fr);
-  justify-content: center;
-  align-items: center;
-  margin-left: 8%;
-}
-.pan img {
-  width: 150px;
-}
-.pan img {
-  width: 150px;
-}
-
 .head {
   grid-area: head;
-  font-size: xxx-large;
-}
-
-.beza {
-  grid-area: beza;
   font-size: xxx-large;
 }
 
@@ -215,6 +200,68 @@ main {
   grid-area: pro6;
 }
 
+.suit {
+  font-size: larger;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.lospostres {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.flatpos {
+  display: flex;
+  flex-direction: column;
+}
+
+.costado {
+  border: 2px solid black;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.hotpos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.hotpos img {
+  width: 64px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.texpos {
+  margin-right: 5px;
+}
+
+.pan {
+  display: flex;
+  display: grid;
+  place-items: center;
+  grid-template-areas: "  .    .    beza  beza beza beza beza  .      .      . " "  .   wit1  wit1    .  wit2 wit2   .  wit3   wit3    . " "  .   wit1  wit1    .  wit2 wit2   .  wit3   wit3    . " "  .     .     .     .    .    .    .    .      .     . " "  .   wit4  wit4    .  wit5 wit5   .  wit6   wit6    . " "  .   wit4  wit4    .  wit5 wit5   .  wit6   wit6    . ";
+  grid-template-rows: repeat(6, 100px);
+  grid-template-columns: repeat(10, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-left: 8%;
+}
+.pan img {
+  width: 150px;
+}
+.pan img {
+  width: 150px;
+}
+
+.beza {
+  grid-area: beza;
+  font-size: xxx-large;
+}
+
 .wit1 {
   grid-area: wit1;
 }
@@ -239,12 +286,6 @@ main {
   grid-area: wit6;
 }
 
-.suit {
-  font-size: larger;
-  text-align: center;
-  margin-top: 5%;
-}
-
 .losgranos {
   border: 5px solid black;
   border-radius: 15px;
@@ -252,21 +293,7 @@ main {
   margin: 20px 50px 0 50px;
 }
 
-.gear {
-  border: 5px solid black;
-  border-radius: 15px;
-  padding: 30px;
-  margin: 20px 50px 0 50px;
-}
-
 .granfe {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.xdgear {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -290,23 +317,6 @@ main {
   width: 150px;
 }
 
-.grigear {
-  display: grid;
-  place-items: center;
-  grid-template-areas: "  .  ger1  ger1  .  ger2 ger2  .  ger3 ger3  . " "  .  ger1  ger1  .  ger2 ger2  .  ger3 ger3  . ";
-  grid-template-rows: repeat(2, 100px);
-  grid-template-columns: repeat(10, 1fr);
-  justify-content: center;
-  align-items: center;
-  margin: 40px 15px 10px 15px;
-}
-.grigear img {
-  width: 180px;
-}
-.grigear img {
-  width: 150px;
-}
-
 .gra1 {
   display: flex;
   flex-direction: column;
@@ -323,6 +333,43 @@ main {
   display: flex;
   flex-direction: column;
   grid-area: gra3;
+}
+
+.texgra {
+  margin-top: 5%;
+  text-align: center;
+  font-size: medium;
+}
+
+.gear {
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px 50px 0 50px;
+}
+
+.xdgear {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grigear {
+  display: grid;
+  place-items: center;
+  grid-template-areas: "  .  ger1  ger1  .  ger2 ger2  .  ger3 ger3  . " "  .  ger1  ger1  .  ger2 ger2  .  ger3 ger3  . ";
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(10, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 40px 15px 10px 15px;
+}
+.grigear img {
+  width: 180px;
+}
+.grigear img {
+  width: 150px;
 }
 
 .ger1 {
@@ -343,31 +390,6 @@ main {
   grid-area: ger3;
 }
 
-.texgra {
-  margin-top: 5%;
-  text-align: center;
-  font-size: medium;
-}
-
-.sigue {
-  display: flex;
-  align-items: start;
-  font-size: 120%;
-  margin-top: 3%;
-  margin-bottom: 1%;
-}
-
-.sox img {
-  height: 50px;
-}
-
-.dere {
-  display: flex;
-  font-size: 120%;
-  margin-top: 1%;
-  margin-bottom: 3%;
-}
-
 footer {
   position: relative;
   bottom: 0;
@@ -380,19 +402,20 @@ footer {
 
 .soicon {
   display: flex;
-  justify-content: space-evenly;
-  background-color: rgb(80, 79, 79);
+  background-color: rgb(44, 18, 6);
+  justify-content: center;
   padding: 30px;
 }
 
 .soicon img {
+  margin: 0 3% 0 3%;
   width: 40px;
 }
 
 .teboton {
   display: flex;
   justify-content: center;
-  background-color: #b9b9b9;
+  background-color: white;
   padding: 7px;
 }
 
@@ -407,6 +430,22 @@ h4 {
   }
   nav img {
     display: block;
+  }
+  .grilla {
+    display: flex;
+    flex-direction: column;
+  }
+  .tof {
+    padding: 8%;
+  }
+  .rof {
+    padding: 8%;
+  }
+  .pof {
+    padding: 8%;
+  }
+  h3 {
+    text-align: center;
   }
   .lasbebidas {
     flex-direction: column;
